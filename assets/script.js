@@ -16,6 +16,7 @@
 //humidit
 //uv
 
+//User enters city in search bar
 const cityInput = document.getElementById('city-input');
 
 cityInput.addEventListener('change', function (event) {
@@ -36,6 +37,8 @@ cityInput.addEventListener('change', function (event) {
 
 //variable api key
 var apiKey = 'f899a5fad6288f546bec1ed402c6fa37';
+
+//This gets data from One Call API which has UV info
 
 function getOneCallData(lon, lat) {
 
@@ -72,18 +75,6 @@ function resolveProtocol() {
 function getWeatherData(city) {
 
 
-    // function hey(word){
-    //     return "Hey " + word;
-    // }
-
-    // const hey2 =  (word) => {
-    //     // ..
-    //     return "Hey " + word
-    // }
-
-    // const hey3 = word => "Hey " + word 
-
-
     return fetch(resolveProtocol() + '//api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey)
         .then((response) => response.json())
         .then(function (response) {
@@ -95,6 +86,9 @@ getWeatherData("perth")
         console.log(response);
     })
     ;
+
+
+    
 
 
 //one call API and current weather data API

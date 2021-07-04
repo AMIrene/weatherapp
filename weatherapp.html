@@ -32,10 +32,10 @@
                             </div>
                         </div>
 
-                        <button class="button is-info">Search</button>
+                        <button class="button is-info search-btn">Search</button>
                     </form>
                     <!--search history (generated using javascript)-->
-                    <div class="box">
+                    <div class="box hide">
                         <ul class="searchHistory">
                             <li class="searchList">Melbourne</li>
                             <li class="searchList">Melbourne</li>
@@ -47,11 +47,12 @@
                 <!--Display for current day city forecast-->
 
                 <div class="column is-6">
-                    <div class="box">
-                        <div class="currentCityDate" id="city">City, <span id="currentDate">Date</span></div>
+                    <div class="box current-box hide">
+                        <div class="Date" id="city">City</div>
 
                         <p class="currentTemp">Temp:</p>
                         <p class="currentWind">Wind:</p>
+                        <img src="" alt="" class="icon"/>
                         <p class="currentHumidity">Humidity:</p>
                         <p class="currentUV">UV Index:</p>
                     </div>
@@ -66,42 +67,47 @@
             <div class="columns">
                 <div class="column is-2-right">
                     <div class="box forecast-box" id="f1">
-                        <div class="f1Date" id="forecastDate1">Date</span></div>
-                        <p class="Temp">Temp:</p>
-                        <p class="Wind">Wind:</p>
-                        <p class="Humidity">Humidity:</p>
+                        <div class="Date" id="forecastDate1">Date</div>
+                        <img src="" alt="" class="icon"/>
+                        <p class="Temp">Temp: <span id="f1temp"></span></p>
+                        <p class="Wind">Wind: <span id="f1wind"></span></p>
+                        <p class="Humidity">Humidity: <span id="f1humidity"></span></p>
                     </div>
                 </div>
                 <div class="column is-2-right">
                     <div class="box forecast-box" id="f2">
-                        <div class="f2Date" id="forecastDate2">Date</span></div>
-                        <p class="Temp">Temp:</p>
-                        <p class="Wind">Wind:</p>
-                        <p class="Humidity">Humidity:</p>
+                        <div class="Date" id="forecastDate2">Date</div>
+                        <img src="" alt="" class="icon"/>
+                        <p class="Temp">Temp: <span id="f2temp"></span></p>
+                        <p class="Wind">Wind: <span id="f2wind"></span></p>
+                        <p class="Humidity">Humidity: <span id="f2humidity"></span></p>
                     </div>
                 </div>
                 <div class="column is-2-right">
                     <div class="box forecast-box" id="f3">
-                        <div class="f3Date" id="forecastDate2">Date</span></div>
-                        <p class="Temp">Temp:</p>
-                        <p class="Wind">Wind:</p>
-                        <p class="Humidity">Humidity:</p>
+                        <div class="Date" id="forecastDate3">Date</div>
+                        <img src="" alt="" class="icon"/>
+                        <p class="Temp">Temp: <span id="f3temp"></span></p>
+                        <p class="Wind">Wind: <span id="f3wind"></span></p>
+                        <p class="Humidity">Humidity: <span id="f3humidity"></span></p>
                     </div>
                 </div>
                 <div class="column is-2-right">
                     <div class="box forecast-box" id="f4">
-                        <div class="f4Date" id="forecastDate2">Date</span></div>
-                        <p class="Temp">Temp:</p>
-                        <p class="Wind">Wind:</p>
-                        <p class="Humidity">Humidity:</p>
+                        <div class="Date" id="forecastDate4">Date</div>
+                        <img src="" alt="" class="icon"/>
+                        <p class="Temp">Temp: <span id="f4temp"></span></p>
+                        <p class="Wind">Wind: <span id="f4wind"></span></p>
+                        <p class="Humidity">Humidity: <span id="f4humidity"></span></p>
                     </div>
                 </div>
                 <div class="column is-2-right">
                     <div class="box forecast-box" id="f5">
-                        <div class="f5Date" id="forecastDate2">Date</span></div>
-                        <p class="Temp">Temp: </p>
-                        <p class="Wind">Wind:</p>
-                        <p class="Humidity">Humidity:</p>
+                        <div class="f5Date" id="forecastDate5">Date</div>
+                        <img src="" alt="" class="icon"/>
+                        <p class="Temp">Temp: <span id="f5temp"></span></p>
+                        <p class="Wind">Wind: <span id="f5wind"></span></p>
+                        <p class="Humidity">Humidity: <span id="f5humidity"></span></p>
                     </div>
                 </div>
             </div>
@@ -109,7 +115,8 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/script.js"></script>
+    <!-- <script src="assets/script.js"></script> -->
+    <script src="assets/weatherapp.js"></script>
 </body>
 
 </html>

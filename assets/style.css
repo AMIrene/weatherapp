@@ -23,3 +23,7 @@
 .forecast-box {
     background-color: #99BDC0;
 }
+
+.hide {
+    display: none;
+}
