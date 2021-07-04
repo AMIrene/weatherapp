@@ -71,7 +71,7 @@ function resolveProtocol() {
     return protocol
 }
 
-//function to call API
+//function to call API and get UV data
 function getWeatherData(city) {
 
 
