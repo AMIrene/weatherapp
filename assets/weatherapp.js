@@ -56,23 +56,23 @@ let weather = {
 
     },
 };
-let uvInfo = {
-fetchUV: function () {
-    fetch (
-        "https://api.openweathermap.org/data/2.5/uvi?lat=" 
-        + data.coord.lat + "&lon=" 
-        + data.coord.lat + 
-        "&appid=" + 
-        apiKey
+// let uvInfo = {
+// fetchUV: function () {
+//     fetch (
+//         "https://api.openweathermap.org/data/2.5/uvi?lat=" 
+//         + data.coord.lat + "&lon=" 
+//         + data.coord.lat + 
+//         "&appid=" + 
+//         apiKey
 
-        ).then((response) => response.json())
-        .then((data) => this.displayUV(data));
-    },
-    displayUV: function (data) {
-        const { uvi } = data.current;
-        console.log (uvi)
-    }
-}
+//         ).then((response) => response.json())
+//         .then((data) => this.displayUV(data));
+//     },
+//     displayUV: function (data) {
+//         const { uvi } = data.current;
+//         console.log (uvi)
+    
+
 
 
 
