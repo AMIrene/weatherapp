@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+
+    <!--Header Nav Bar-->
+    <nav class="navbar">
+        <h1 class="navbar-item is-size-1 has-text-centered">
+            Weather Dashboard
+        </h1>
+    </nav>
+
+<!--Container for the search bar and current city weather info-->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <!--Search bar: User search input for city-->
+                <div class="column is-6">
+                    <form class="box">
+                        <div class="field">
+                            <label class="label">Search for a city</label>
+                            <div class="control">
+                                <input id="city-input" class="input" type="search" placeholder="e.g. Melbourne">
+                            </div>
+                        </div>
+
+                        <button class="button is-info">Search</button>
+                    </form>
+                    <!--search history (generated using javascript)-->
+                    <div class="box">
+                        <ul class="searchHistory">
+                            <li class="searchList">Melbourne</li>
+                            <li class="searchList">Melbourne</li>
+                            <li class="searchList">Melbourne</li>
+                            <li class="searchList">Melbourne</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Display for current day city forecast-->
+
+                <div class="column is-6">
+                    <div class="box">
+                        <div class="currentCityDate" id="city">City, <span id="currentDate">Date</span></div>
+
+                        <p class="currentTemp">Temp:</p>
+                        <p class="currentWind">Wind:</p>
+                        <p class="currentHumidity">Humidity:</p>
+                        <p class="currentUV">UV Index:</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!--Search bar: 5 day city forecast-->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-2-right">
+                    <div class="box forecast-box" id="f1">
+                        <div class="f1Date" id="forecastDate1">Date</span></div>
+                        <p class="Temp">Temp:</p>
+                        <p class="Wind">Wind:</p>
+                        <p class="Humidity">Humidity:</p>
+                    </div>
+                </div>
+                <div class="column is-2-right">
+                    <div class="box forecast-box" id="f2">
+                        <div class="f2Date" id="forecastDate2">Date</span></div>
+                        <p class="Temp">Temp:</p>
+                        <p class="Wind">Wind:</p>
+                        <p class="Humidity">Humidity:</p>
+                    </div>
+                </div>
+                <div class="column is-2-right">
+                    <div class="box forecast-box" id="f3">
+                        <div class="f3Date" id="forecastDate2">Date</span></div>
+                        <p class="Temp">Temp:</p>
+                        <p class="Wind">Wind:</p>
+                        <p class="Humidity">Humidity:</p>
+                    </div>
+                </div>
+                <div class="column is-2-right">
+                    <div class="box forecast-box" id="f4">
+                        <div class="f4Date" id="forecastDate2">Date</span></div>
+                        <p class="Temp">Temp:</p>
+                        <p class="Wind">Wind:</p>
+                        <p class="Humidity">Humidity:</p>
+                    </div>
+                </div>
+                <div class="column is-2-right">
+                    <div class="box forecast-box" id="f5">
+                        <div class="f5Date" id="forecastDate2">Date</span></div>
+                        <p class="Temp">Temp: </p>
+                        <p class="Wind">Wind:</p>
+                        <p class="Humidity">Humidity:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

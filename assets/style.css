@@ -7,12 +7,19 @@
    
 }
 
-.jumbotron {
-    text-align: center;
+.navbar {
+    
     background-color: #4C5760;
-    color: white;
+    
     border-radius: 0;
    
   }
     
+.navbar-item {
+    color: white;
+    text-align: center;
+}
 
+.forecast-box {
+    background-color: #99BDC0;
+}

@@ -1,3 +1,5 @@
+
+
 //variable time
 //variable current date
 //variable city
@@ -16,18 +18,20 @@
 
 const cityInput = document.getElementById('city-input');
 
-cityInput.addEventListener('change', function(event){
+cityInput.addEventListener('change', function (event) {
     event.preventDefault();
 
     const userInput = event.target.value;
 
     console.log(userInput);
 
-    
-getWeatherData(userInput)
-.then(res => {
-    console.log(res)
-})
+
+    getWeatherData(userInput)
+        .then(res => {
+            console.log(res)
+        })
+
+
 });
 
 //variable api key
@@ -90,7 +94,7 @@ getWeatherData("perth")
     .then(response => {
         console.log(response);
     })
-;
+    ;
 
 
 //one call API and current weather data API
